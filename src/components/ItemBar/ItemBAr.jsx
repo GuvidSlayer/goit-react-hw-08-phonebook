@@ -4,6 +4,12 @@ import { useDeleteContactMutation } from '../../redux/contacts/contactsSlice.js'
 const ItemBar = ({ id, isOpenModal }) => {
   const [deleteContact, { isUninitialized }] = useDeleteContactMutation();
 
+  /*const handleDeleteClick = () => {
+    if (isUninitialized) {
+      deleteContact(id);
+    }
+  };*/
+
   return (
     <div>
       <button
